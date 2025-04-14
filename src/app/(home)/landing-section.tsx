@@ -1,0 +1,29 @@
+import { Button } from "./button";
+
+export default function LandingSection() {
+  return (
+    <section className="flex p-40 min-h-screen items-center">
+      <div className="">
+        <h1 className="text-6xl font-bold">
+          Hi, I&apos;m <span>Bence Garai</span>
+        </h1>
+        <div className="font-semibold text-2xl mt-4 text-secondary">
+          <h3>Software Developer</h3>
+        </div>
+        <p className="mt-4 max-w-2xl">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <div className="flex h-14 mt-4 gap-10">
+          <Button href="#">GitHub</Button>
+          <Button href="#">LinkedIn</Button>
+        </div>
+      </div>
+    </section>
+  );
+}
