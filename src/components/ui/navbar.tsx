@@ -1,27 +1,36 @@
+"use client";
 import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center p-4 bg-gray-800 text-white">
-      <div className="text-xl font-bold">Bence Garai</div>
-      <ul className="flex space-x-4">
+    <nav className="flex justify-between items-center p-4 bg-transparent text-primary">
+      <div className="text-2xl font-semibold pl-30">Bence</div>
+      <ul className="flex space-x-10 text-xl p-2 pr-30">
         <li>
-          <Link href="/" className="hover:text-gray-400">
+          <Link
+            href="/"
+            className="hover:text-secondary transition-colors duration-300">
             Home
           </Link>
         </li>
         <li>
-          <Link href="/about" className="hover:text-gray-400">
+          <Link
+            href="/about"
+            className="hover:text-secondary transition-colors duration-300">
             About
           </Link>
         </li>
         <li>
-          <Link href="/projects" className="hover:text-gray-400">
+          <Link
+            href="/projects"
+            className="hover:text-secondary transition-colors duration-300">
             Projects
           </Link>
         </li>
         <li>
-          <Link href="/contact" className="hover:text-gray-400">
+          <Link
+            href="/contact"
+            className="hover:text-secondary transition-colors duration-300">
             Contact
           </Link>
         </li>
