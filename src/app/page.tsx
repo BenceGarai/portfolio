@@ -1,3 +1,5 @@
+import LandingSection from "./(home)/landing-section";
+
 // export default function Home() {
 //   return (
 //     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -52,11 +54,8 @@
 
 export default function Home() {
   return (
-    <section className="min-h-screen flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-5xl font-bold mb-4">Hi, I’m Bence Garai</h1>
-        <p className="text-xl text-gray-600">Software Developer</p>
-      </div>
-    </section>
+    <main>
+      <LandingSection></LandingSection>
+    </main>
   );
 }
