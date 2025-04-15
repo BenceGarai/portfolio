@@ -1,16 +1,19 @@
+import Image from "next/image";
 import { Button } from "./button";
+import { SocialButton } from "./social-button";
+import githubIcon from "@/assets/images/bxl-github.svg";
 
 export default function LandingSection() {
   return (
     <section className="flex p-40 min-h-screen items-center">
       <div className="">
         <h1 className="text-6xl font-bold">
-          Hi, I&apos;m <span>Bence Garai</span>
+          Hi, I&apos;m <span className="">Bence Garai</span>
         </h1>
         <div className="font-semibold text-2xl mt-4 text-secondary">
           <h3>Software Developer</h3>
         </div>
-        <p className="mt-4 max-w-2xl">
+        <p className="mt-4 max-w-2xl ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -20,8 +23,15 @@ export default function LandingSection() {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <div className="flex h-14 mt-4 gap-10">
-          <Button href="#">GitHub</Button>
-          <Button href="#">LinkedIn</Button>
+          <Button href="#">Hire me</Button>
+          <Button href="#">Contact me</Button>
+        </div>
+        <div className="flex absolute bottom-4 w-40 justify-between">
+          <SocialButton
+            href="#"
+            icon={
+              <Image src={githubIcon} width={48} height={48} alt="Github" />
+            }></SocialButton>
         </div>
       </div>
     </section>
