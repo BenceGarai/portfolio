@@ -15,16 +15,16 @@ export default function Navbar() {
         </li>
         <li>
           <Link
-            href="/about"
+            href="#projects"
             className="hover:text-secondary transition-colors duration-300">
-            About
+            Projects
           </Link>
         </li>
         <li>
           <Link
-            href="/projects"
+            href="#aboutme"
             className="hover:text-secondary transition-colors duration-300">
-            Projects
+            About
           </Link>
         </li>
         <li>

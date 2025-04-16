@@ -1,10 +1,8 @@
-export default function AboutMeSection() {
+export default function ContactMe() {
   return (
-    <section
-      id="aboutme"
-      className="flex p-40 min-h-screen items-center justify-center">
+    <section className="flex p-40 min-h-screen items-center justify-center">
       <div className="">
-        <h1 className="text-4xl font-bold">About Me</h1>
+        <h1 className="text-4xl font-bold">Contact Me</h1>
         <p className="mt-4 max-w-2xl ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
