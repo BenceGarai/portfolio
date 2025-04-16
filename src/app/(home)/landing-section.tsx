@@ -5,7 +5,7 @@ import { FaGithubAlt } from "react-icons/fa";
 
 export default function LandingSection() {
   return (
-    <section className="flex p-40 min-h-screen items-center">
+    <section id="landing" className="flex p-40 min-h-screen items-center">
       <div className="">
         <h1 className="text-6xl font-bold">
           Hi, I&apos;m <span className="">Bence Garai</span>
@@ -28,10 +28,10 @@ export default function LandingSection() {
         </div>
         <div className="flex absolute bottom-10 w-28 justify-between">
           <SocialButton
-            href="#"
+            href="https://www.linkedin.com/in/bencegarai9"
             icon={<TiSocialLinkedin></TiSocialLinkedin>}></SocialButton>
           <SocialButton
-            href="#"
+            href="https://github.com/BenceGarai"
             icon={<FaGithubAlt></FaGithubAlt>}></SocialButton>
         </div>
       </div>

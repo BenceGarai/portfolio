@@ -10,7 +10,15 @@ export const projects = [
     title: "Movie Reccommendation System",
     description:
       "Applied academic expertise in Data Structures, Algorithms, and IT disciplines to develop a machine learning-driven movie recommendation system.",
-    tags: ["Python", "Pandas", "Alhorithms"],
+    tags: ["Python", "Pandas", "Algorithms"],
+    link: "#",
+  },
+
+  {
+    title: "Flappy Bird",
+    description:
+      "Developed a Flappy Bird clone using C# and Unity, implementing game mechanics, collision detection, and scoring system.",
+    tags: ["C#", "SFML", "Game Development"],
     link: "#",
   },
   // Add the rest of my projects here
