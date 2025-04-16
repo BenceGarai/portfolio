@@ -1,7 +1,7 @@
-import Image from "next/image";
 import { Button } from "./button";
 import { SocialButton } from "./social-button";
-import githubIcon from "@/assets/images/bxl-github.svg";
+import { TiSocialLinkedin } from "react-icons/ti";
+import { FaGithubAlt } from "react-icons/fa";
 
 export default function LandingSection() {
   return (
@@ -26,12 +26,13 @@ export default function LandingSection() {
           <Button href="#">Hire me</Button>
           <Button href="#">Contact me</Button>
         </div>
-        <div className="flex absolute bottom-4 w-40 justify-between">
+        <div className="flex absolute bottom-10 w-28 justify-between">
           <SocialButton
             href="#"
-            icon={
-              <Image src={githubIcon} width={48} height={48} alt="Github" />
-            }></SocialButton>
+            icon={<TiSocialLinkedin></TiSocialLinkedin>}></SocialButton>
+          <SocialButton
+            href="#"
+            icon={<FaGithubAlt></FaGithubAlt>}></SocialButton>
         </div>
       </div>
     </section>

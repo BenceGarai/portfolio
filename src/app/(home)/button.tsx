@@ -1,3 +1,6 @@
+"use client";
+import { motion } from "framer-motion";
+
 interface ButtonProps {
   href: string;
   children: React.ReactNode;
@@ -6,10 +9,12 @@ interface ButtonProps {
 
 export function Button({ href, children, className }: ButtonProps) {
   return (
-    <a
+    <motion.a
+      whileTap={{ scale: 0.95 }}
+      whileHover={{ scale: 1.1 }}
       href={href}
-      className={`inline-flex justify-center items-center w-40 h-full bg-secondary border-2 rounded-xl border-background font-semibold text-background tracking-widest transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-secondary/90 ${className}`}>
+      className={`inline-flex justify-center items-center w-35 h-full bg-secondary border-2 rounded-2xl border-background font-semibold text-background tracking-widest ${className}`}>
       {children}
-    </a>
+    </motion.a>
   );
 }

@@ -1,3 +1,6 @@
+"use client";
+import { motion } from "motion/react";
+
 interface SocialButtonProps {
   href: string;
   icon?: React.ReactNode;
@@ -5,10 +8,12 @@ interface SocialButtonProps {
 
 export function SocialButton({ href, icon }: SocialButtonProps) {
   return (
-    <a
+    <motion.a
+      whileTap={{ scale: 0.95 }}
+      whileHover={{ scale: 1.1 }}
       href={href}
-      className="inline-flex justify-center items-center w-10 h-10 bg-transparent border-2 border-secondary rounded-full text-2xl ">
+      className="inline-flex justify-center items-center w-10 h-10 bg-transparent border-2 border-secondary rounded-full text-2xl text-secondary">
       {icon}
-    </a>
+    </motion.a>
   );
 }
