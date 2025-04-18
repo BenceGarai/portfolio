@@ -1,10 +1,10 @@
 export default function ExperienceSection() {
   return (
     <section
-      id="aboutme"
+      id="experience"
       className="flex p-40 min-h-screen items-center justify-center">
-      <div className="">
-        <h1 className="text-4xl font-bold">About Me</h1>
+      <div className="max-w-7xl mx-auto">
+        <h1 className="font-bold text-4xl text-center mb-12">My Journey</h1>
         <p className="mt-4 max-w-2xl ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
