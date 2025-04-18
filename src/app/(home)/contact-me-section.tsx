@@ -1,6 +1,6 @@
 export default function ContactMe() {
   return (
-    <section className="flex p-40 min-h-screen items-center justify-center">
+    <section className="flex p-40 min-h-screen items-center justify-center bg-backround-secondary">
       <div className="">
         <h1 className="text-4xl font-bold">Contact Me</h1>
         <p className="mt-4 max-w-2xl ">
