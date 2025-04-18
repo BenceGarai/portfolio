@@ -22,14 +22,14 @@ export default function Navbar() {
         </li>
         <li>
           <Link
-            href="#aboutme"
+            href="#experience"
             className="hover:text-secondary transition-colors duration-300">
-            About
+            Experience
           </Link>
         </li>
         <li>
           <Link
-            href="/contact"
+            href="#contact"
             className="hover:text-secondary transition-colors duration-300">
             Contact
           </Link>

@@ -1,4 +1,4 @@
-export default function AboutMeSection() {
+export default function ExperienceSection() {
   return (
     <section
       id="aboutme"

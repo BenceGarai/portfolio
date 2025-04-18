@@ -43,7 +43,7 @@ export default function ProjectCard({ project }: ProjectProps) {
           target="_blank"
           rel="noopener noreferrer"
           className="text-secondary underline">
-          View Project
+          View Project ↗
         </a>
       </div>
     </motion.div>
