@@ -4,6 +4,7 @@ import { SocialButton } from "./social-button";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { FaGithubAlt } from "react-icons/fa";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function LandingSection() {
   return (
@@ -39,15 +40,21 @@ export default function LandingSection() {
         </div>
       </div>
       <div className="hidden lg:flex items-center justify-center ml-10 xl:ml-20 h-fit w-fit">
-        <div className="relative">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.1 }}
+          whileHover={{ scale: 1.03 }}
+          className="relative">
           <Image
             className="rounded-full object-cover border-4 bg-backround-secondary"
             src={"/images/transparent-face-image.png"}
             alt="Headshot image"
             height={320}
-            width={320}></Image>
+            width={320}
+            priority></Image>
           {/* Add cool animation to image */}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

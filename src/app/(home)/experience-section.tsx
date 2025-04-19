@@ -13,7 +13,7 @@ export default function ExperienceSection() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         exit={{ opacity: 0, y: -20 }}
         className="max-w-7xl mx-auto">
         <h1 className="font-bold text-5xl text-center mb-12">
