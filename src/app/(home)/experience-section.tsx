@@ -1,13 +1,21 @@
+"use client";
 import JourneyCard from "./journey-card";
 import { experiences } from "@/data/experiences";
 import { education } from "@/data/education";
+import { motion } from "framer-motion";
 
 export default function ExperienceSection() {
   return (
     <section
       id="experience"
       className="flex p-40 min-h-screen items-center justify-center bg-backround-secondary">
-      <div className="max-w-7xl mx-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: false }}
+        exit={{ opacity: 0, y: -20 }}
+        className="max-w-7xl mx-auto">
         <h1 className="font-bold text-5xl text-center mb-12">
           My <span className="text-secondary">Journey</span>
         </h1>
@@ -50,7 +58,7 @@ export default function ExperienceSection() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
