@@ -19,8 +19,8 @@ export default function ProjectCard({ project }: ProjectProps) {
   const { title, description, tags, link, imageUrl, imageAlt } = project;
   return (
     <motion.div
-      whileHover={{ scale: 1.1, transition: { duration: 0.1 } }}
-      className="group flex flex-col bg-background border border-border rounded-lg p-6 max-w-sm hover:shadow-lg transition-all duration-300 hover:border-secondary">
+      whileHover={{ scale: 1.05, transition: { duration: 0.1 } }}
+      className="group flex flex-col bg-background-secondary max-w-sm">
       <div className="relative h-48 w-full overflow-hidden rounded-lg mb-4">
         <Image src={imageUrl} alt={imageAlt} fill className="object-cover" />
       </div>

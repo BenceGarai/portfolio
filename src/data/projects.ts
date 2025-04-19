@@ -27,5 +27,14 @@ export const projects = [
     imageUrl: "/images/flappy-bird.png",
     imageAlt: "Flappy Bird game screenshot",
   },
+  {
+    title: "Pong with NEAT AI",
+    description:
+      "Classic Pong game with an integrated NEAT algorithm to create an AI opponent.",
+    tags: ["Python", "AI"],
+    link: "https://github.com/BenceGarai/PongAI",
+    imageUrl: "/images/pong.jpeg",
+    imageAlt: "Flappy Bird game screenshot",
+  },
   // Add the rest of my projects here
 ];
