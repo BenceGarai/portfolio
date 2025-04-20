@@ -1,23 +1,23 @@
 export const experiences = [
   {
-    title: "Software Engineer Intern",
-    location: "XYZ Corporation",
-    date: "June 2023 - Present",
+    title: "AI Data Specialist",
+    location: "Outlier AI",
+    date: "August 2024 - Present",
     description:
-      "Developing and maintaining web applications using React and Node.js.",
+      "Applied Reinforcement Learning from Human Feedback (RLHF) to enhance the efficiency and accuracy of machine learning models. Performed quality assurance on analysts' work, including prompts, feedback, conversations, and instruction-following tasks.",
   },
   {
-    title: "Data Analyst Intern",
-    location: "ABC Analytics",
-    date: "January 2023 - May 2023",
+    title: "Internet Safety Evaluator",
+    location: "TELUS International",
+    date: "January 2020 - October 2023",
     description:
-      "Analyzed large datasets to derive actionable insights using Python and SQL.",
+      "Analyzed and provided feedback on text, web pages, images, and other types of information for leading search engines, resulting in the removal of inappropriate content.",
   },
   {
-    title: "Web Developer Intern",
-    location: "Tech Solutions",
-    date: "June 2022 - August 2022",
+    title: "Customer Service Representative",
+    location: "Deco Plus Painting",
+    date: "February 2017 - October 2019",
     description:
-      "Assisted in the development of client websites using HTML, CSS, and JavaScript.",
+      "Provided comprehensive product information, processed orders, and delivered quality customer support over the phone.",
   },
 ];
