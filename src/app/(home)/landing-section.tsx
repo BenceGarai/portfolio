@@ -10,8 +10,8 @@ export default function LandingSection() {
   return (
     <section
       id="landing"
-      className="flex flex-col lg:flex-row p-40 min-h-screen items-center justify-center">
-      <div className="flex-row h-fit w-fit">
+      className="flex p-40 min-h-screen items-center justify-center">
+      <div className="flex-row">
         <h1 className="text-6xl font-bold">
           Hi, I&apos;m <span className="">Bence Garai</span>
         </h1>
@@ -20,11 +20,11 @@ export default function LandingSection() {
         </div>
         <p className="mt-4 max-w-2xl ">
           I&apos;m a computer science graduate currently working as an
-          <span className="font-semibold"> AI Developer</span>. <br></br> I
-          train AI to give better answers, like making sure it’s both accurate,
-          polite and actually useful. I also spend a lot of time learning about
-          new technologies and improving my overall skill level. Check out my
-          resume below or explore my profile thorughout the page.
+          <span className="font-semibold"> AI Developer</span>. I train AI to
+          give better answers, like making sure it’s both accurate, polite and
+          actually useful. I also spend a lot of time learning about new
+          technologies and improving my overall skill level. Check out my resume
+          below or explore my profile thorughout the page.
         </p>
         <div className="flex h-14 mt-4 gap-10">
           <Button href="#">Resume</Button>
