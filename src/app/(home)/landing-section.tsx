@@ -5,6 +5,7 @@ import { TiSocialLinkedin } from "react-icons/ti";
 import { FaGithubAlt } from "react-icons/fa";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import ResumeButton from "./resume-button";
 
 export default function LandingSection() {
   return (
@@ -24,13 +25,13 @@ export default function LandingSection() {
           give better answers, like making sure it’s both accurate, polite and
           actually useful. I also spend a lot of time learning about new
           technologies and improving my overall skill level. Check out my resume
-          below or explore my profile thorughout the page.
+          below or explore my profile throughout the page.
         </p>
         <div className="flex h-14 mt-4 gap-10">
-          <Button href="#">Resume</Button>
+          <ResumeButton></ResumeButton>
           <Button href="#contact">Contact me</Button>
         </div>
-        <div className="flex absolute bottom-10 w-28 justify-between">
+        <div className="hidden lg:flex absolute bottom-10 w-fit justify-start gap-4">
           <SocialButton
             href="https://www.linkedin.com/in/bencegarai9"
             icon={<TiSocialLinkedin></TiSocialLinkedin>}></SocialButton>
