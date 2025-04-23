@@ -17,7 +17,7 @@ export default function LandingSection() {
             Hi, I&apos;m <span className="">Bence Garai</span>
           </h1>
           <div className="font-semibold text-2xl mt-4 text-secondary">
-            <h3>Software Developer</h3>
+            <h3 className="">Software Developer</h3>
           </div>
           <p className="mt-4 max-w-2xl ">
             I&apos;m a computer science graduate currently working as an
