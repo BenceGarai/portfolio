@@ -9,7 +9,7 @@ export default function Home() {
       <LandingSection></LandingSection>
       <ProjectsSection></ProjectsSection>
       <ExperienceSection></ExperienceSection>
-      <ContactMe></ContactMe>
+      {/*<ContactMe></ContactMe>*/}
     </main>
   );
 }
