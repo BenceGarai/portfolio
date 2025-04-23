@@ -1,5 +1,4 @@
 "use client";
-import { Button } from "./button";
 import { SocialButton } from "./social-button";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { FaGithubAlt } from "react-icons/fa";
@@ -12,50 +11,51 @@ export default function LandingSection() {
     <section
       id="landing"
       className="flex p-40 min-h-screen items-center justify-center">
-      <div className="flex-row">
-        <h1 className="text-6xl font-bold">
-          Hi, I&apos;m <span className="">Bence Garai</span>
-        </h1>
-        <div className="font-semibold text-2xl mt-4 text-secondary">
-          <h3>Software Developer</h3>
+      <div className="flex shadow-md justify-center items-center">
+        <div className="flex-row p-8">
+          <h1 className="text-6xl font-bold">
+            Hi, I&apos;m <span className="">Bence Garai</span>
+          </h1>
+          <div className="font-semibold text-2xl mt-4 text-secondary">
+            <h3>Software Developer</h3>
+          </div>
+          <p className="mt-4 max-w-2xl ">
+            I&apos;m a computer science graduate currently working as an
+            <span className="font-semibold"> AI Developer</span>. I train AI to
+            give better answers, like making sure it’s both accurate, polite and
+            actually useful. I also spend a lot of time learning about new
+            technologies and improving my overall skill level. Check out my
+            resume below or explore my profile throughout the page.
+          </p>
+          <div className="flex h-14 mt-4 gap-10">
+            <ResumeButton></ResumeButton>
+          </div>
+          <div className="hidden lg:flex absolute bottom-10 w-fit justify-start gap-4">
+            <SocialButton
+              href="https://www.linkedin.com/in/bencegarai9"
+              icon={<TiSocialLinkedin></TiSocialLinkedin>}></SocialButton>
+            <SocialButton
+              href="https://github.com/BenceGarai"
+              icon={<FaGithubAlt></FaGithubAlt>}></SocialButton>
+          </div>
         </div>
-        <p className="mt-4 max-w-2xl ">
-          I&apos;m a computer science graduate currently working as an
-          <span className="font-semibold"> AI Developer</span>. I train AI to
-          give better answers, like making sure it’s both accurate, polite and
-          actually useful. I also spend a lot of time learning about new
-          technologies and improving my overall skill level. Check out my resume
-          below or explore my profile throughout the page.
-        </p>
-        <div className="flex h-14 mt-4 gap-10">
-          <ResumeButton></ResumeButton>
-          <Button href="#contact">Contact me</Button>
+        <div className="hidden lg:flex items-center justify-center ml-10 xl:ml-20 h-fit w-fit p-4">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.1 }}
+            whileHover={{ scale: 1.03 }}
+            className="relative">
+            <Image
+              className="rounded-full object-cover border-4 bg-backround-secondary"
+              src={"/images/transparent-face-image.png"}
+              alt="Headshot image"
+              height={320}
+              width={320}
+              priority></Image>
+            {/* Add cool animation to image */}
+          </motion.div>
         </div>
-        <div className="hidden lg:flex absolute bottom-10 w-fit justify-start gap-4">
-          <SocialButton
-            href="https://www.linkedin.com/in/bencegarai9"
-            icon={<TiSocialLinkedin></TiSocialLinkedin>}></SocialButton>
-          <SocialButton
-            href="https://github.com/BenceGarai"
-            icon={<FaGithubAlt></FaGithubAlt>}></SocialButton>
-        </div>
-      </div>
-      <div className="hidden lg:flex items-center justify-center ml-10 xl:ml-20 h-fit w-fit">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.1 }}
-          whileHover={{ scale: 1.03 }}
-          className="relative">
-          <Image
-            className="rounded-full object-cover border-4 bg-backround-secondary"
-            src={"/images/transparent-face-image.png"}
-            alt="Headshot image"
-            height={320}
-            width={320}
-            priority></Image>
-          {/* Add cool animation to image */}
-        </motion.div>
       </div>
     </section>
   );
