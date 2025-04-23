@@ -31,13 +31,6 @@ export default function Navbar() {
             Experience
           </Link>
         </li>
-        <li>
-          <Link
-            href="#contact"
-            className="hover:text-secondary transition-colors duration-300">
-            Contact
-          </Link>
-        </li>
       </ul>
     </nav>
   );
