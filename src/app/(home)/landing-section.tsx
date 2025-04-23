@@ -11,7 +11,7 @@ export default function LandingSection() {
     <section
       id="landing"
       className="flex p-40 min-h-screen items-center justify-center">
-      <div className="flex shadow-md justify-center items-center">
+      <div className="flex shadow-md justify-center items-center rounded-2xl">
         <div className="flex-row p-8">
           <h1 className="text-6xl font-bold">
             Hi, I&apos;m <span className="">Bence Garai</span>

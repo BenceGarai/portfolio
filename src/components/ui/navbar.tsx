@@ -1,10 +1,14 @@
 "use client";
+import LightSwitch from "@/app/(home)/light-switch";
 import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center p-4 bg-transparent text-primary">
-      <div className="text-2xl font-semibold pl-30">Bence</div>
+    <nav className="flex justify-between items-center p-4 bg-transparent text-primary shadow-md">
+      <div className="grid grid-cols-2 gap-4 pl-30">
+        <p className="text-2xl font-semibold">Bence</p>
+        <LightSwitch></LightSwitch>
+      </div>
       <ul className="flex space-x-10 text-xl p-2 pr-30">
         <li>
           <Link
