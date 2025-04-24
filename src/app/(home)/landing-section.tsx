@@ -11,7 +11,7 @@ export default function LandingSection() {
     <section
       id="landing"
       className="flex p-40 min-h-screen items-center justify-center">
-      <div className="flex shadow-md justify-center items-center rounded-2xl">
+      <div className="flex shadow-lg justify-center items-center rounded-2xl">
         <div className="flex-row p-8">
           <h1 className="text-6xl font-bold">
             Hi, I&apos;m <span className="">Bence Garai</span>
@@ -21,11 +21,11 @@ export default function LandingSection() {
           </div>
           <p className="mt-4 max-w-2xl ">
             I&apos;m a computer science graduate currently working as an
-            <span className="font-semibold"> AI Developer</span>. I train AI to
-            give better answers, like making sure it’s both accurate, polite and
-            actually useful. I also spend a lot of time learning about new
-            technologies and improving my overall skill level. Check out my
-            resume below or explore my profile throughout the page.
+            <span className="font-semibold"> AI Data Specialist</span>. In my
+            role, I train AI to give better answers, like making sure it’s both
+            accurate, polite and actually useful. I also spend a lot of time
+            learning about new technologies and improving my overall skill
+            level.
           </p>
           <div className="flex h-14 mt-4 gap-10">
             <ResumeButton></ResumeButton>

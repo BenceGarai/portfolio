@@ -11,8 +11,8 @@ export default function ResumeButton() {
     <>
       <motion.button
         whileTap={{ scale: 0.95 }}
-        whileHover={{ scale: 1.15 }}
-        transition={{ duration: 0.2 }}
+        whileHover={{ scale: 1.1 }}
+        transition={{ duration: 0.1 }}
         onClick={() => setIsOpen(true)}
         className="cursor-pointer inline-flex justify-center items-center w-35 h-full bg-secondary border-2 rounded-2xl border-background font-semibold text-background tracking-widest">
         Resume

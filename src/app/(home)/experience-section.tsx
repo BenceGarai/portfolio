@@ -26,7 +26,7 @@ export default function ExperienceSection() {
               <h3 className="text-3xl font-bold pl-7">Experience</h3>
             </div>
 
-            <div className="relative pl-7 border-l-3 border-white/20">
+            <div className="relative pl-7 border-l-3 border-secondary/30">
               {experiences.map((exp) => (
                 <div key={exp.title} className="relative pb-5 last:pb-0">
                   {/* Timeline dot */}
@@ -45,7 +45,7 @@ export default function ExperienceSection() {
               <h3 className="text-3xl font-bold pl-7">Education</h3>
             </div>
 
-            <div className="relative pl-7 border-l-3 border-white/20">
+            <div className="relative pl-7 border-l-3 border-secondary/30">
               {education.map((edu) => (
                 <div key={edu.title} className="relative pb-5 last:pb-0">
                   {/* Timeline dot */}
