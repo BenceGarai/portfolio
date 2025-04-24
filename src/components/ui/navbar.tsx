@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center p-4 bg-transparent text-primary shadow-md">
+    <nav className="flex justify-between items-center p-4 bg-foreground text-primary drop-shadow-xl">
       <div className="grid grid-cols-2 gap-4 pl-30">
         <p className="text-2xl font-semibold">Bence</p>
         <LightSwitch></LightSwitch>

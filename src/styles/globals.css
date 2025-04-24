@@ -3,36 +3,38 @@
 :root {
   /* Default light theme */
   --background: #eeeeee;
-  --foreground: #040404;
+  --foreground: #ecebeb;
+  --text-primary: #040404;
   --text-secondary: #040404d2;
-  --background-secondary: #ebebeb;
+
+  /*Font*/
+  --font-sans: Inter, sans-serif;
 
   /* Dark theme */
   --background-dark: #000000;
-  --foreground-dark: #eeeeee;
+  --foreground-dark: #040404;
+  --text-primary-dark: #eeeeee;
   --text-secondary-dark: #08fb9b;
-  --background-secondary-dark: #040404;
 }
 
 [data-theme="dark"] {
   --background: var(--background-dark);
   --foreground: var(--foreground-dark);
+  --text-primary: var(--text-primary-dark);
   --text-secondary: var(--text-secondary-dark);
-  --background-secondary: var(--background-secondary-dark);
 }
 
 @theme inline {
+  /* Background colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --color-primary: var(--foreground);
+  /* Font colors */
+  --color-primary: var(--text-primary);
   --color-secondary: var(--text-secondary);
-  --color-backround-secondary: var(--background-secondary);
+  /* Font family */
+  --font-sans: var(--font-geist-sans);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Inter, sans-serif;
+  font-family: var(--font-sans);
 }

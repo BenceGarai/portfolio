@@ -8,7 +8,7 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="flex p-40 min-h-screen items-center justify-center bg-backround-secondary">
+      className="flex p-40 min-h-screen items-center justify-center bg-background text-primary">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -35,7 +35,7 @@ export default function LightSwitch() {
       animate={{ x: 0, opacity: 1, rotate: 0 }}
       initial={{ x: 20, opacity: 0, rotate: 30 }}
       aria-label={`Switch to ${theme === "light" ? "dark" : "light"} mode`}
-      className="relative p-2 rounded-full bg-backround-secondary shadow-md w-fit h-fit">
+      className="relative p-2 rounded-full bg-foreground shadow-md w-fit h-fit">
       <motion.div key={theme} className="">
         {theme === "light" ? (
           <FiSun className="w-5 h-5 text-primary" />

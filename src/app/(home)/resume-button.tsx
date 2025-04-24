@@ -14,6 +14,8 @@ export default function ResumeButton() {
         whileHover={{ scale: 1.1 }}
         transition={{ duration: 0.1 }}
         onClick={() => setIsOpen(true)}
+        title="View Resume"
+        aria-label="View resume"
         className="cursor-pointer inline-flex justify-center items-center w-35 h-full bg-secondary border-2 rounded-2xl border-background font-semibold text-background tracking-widest">
         Resume
       </motion.button>
@@ -22,7 +24,7 @@ export default function ResumeButton() {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
           {/* Blur the background*/}
           <div
-            className="absolute inset-0 bg-backround-secondary/50 backdrop-blur-sm"
+            className="absolute inset-0 bg-foreground/50 backdrop-blur-sm"
             onClick={() => setIsOpen(false)}
           />
 
@@ -30,16 +32,16 @@ export default function ResumeButton() {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="flex flex-col relative z-10 w-full max-w-4xl h-[90vh] rounded-2xl shadow-2xl overflow-hidden bg-backround-secondary p-4">
+            className="flex flex-col relative z-10 w-full max-w-4xl h-[90vh] rounded-2xl shadow-2xl overflow-hidden bg-foreground p-4">
             {/* Header with Close Button */}
             <div className="flex justify-between items-center p-4">
               <h2 className="text-xl font-semibold">Resume</h2>
               <button
                 onClick={() => setIsOpen(false)}
-                className="p-2 rounded-full bg-secondary hover:bg-primary transition-colors"
+                className="p-2 rounded-full bg-secondary cursor-pointer"
                 title="Close Resume"
                 aria-label="Close resume">
-                <FiX className="text-backround-secondary" size={24} />
+                <FiX className="text-background" size={24} />
               </button>
             </div>
 

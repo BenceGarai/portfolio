@@ -7,7 +7,7 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="min-h-screen py-20 px-4 sm:px-8 lg:px-16 bg-backround-secondary">
+      className="min-h-screen py-20 px-4 sm:px-8 lg:px-16 bg-background text-primary">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

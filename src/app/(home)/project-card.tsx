@@ -23,7 +23,7 @@ export default function ProjectCard({ project }: ProjectProps) {
         scale: 1.05,
         transition: { duration: 0.1 },
       }}
-      className="group flex flex-col bg-background-secondary max-w-sm shadow-xl p-4 rounded-xl">
+      className="group flex flex-col max-w-sm shadow-xl p-4 rounded-xl bg-foreground">
       <div className="relative h-48 w-full overflow-hidden rounded-lg mb-4">
         <Image src={imageUrl} alt={imageAlt} fill className="object-cover" />
       </div>

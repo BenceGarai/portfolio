@@ -23,9 +23,9 @@ export default function JourneyCard({ journey }: JourneyCardProps) {
       transition={{ type: "tween" }}
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
-      className="bg-background rounded-lg p-6 outline-1 outline-gray-300 hover:outline-secondary shadow-lg">
-      <h2 className="text-xl font-bold mb-1">{title}</h2>
-      <p className="text-gray-500 text-sm mb-1">{location}</p>
+      className="bg-foreground rounded-lg p-6 outline-1 outline-gray-300 hover:outline-secondary shadow-lg">
+      <h2 className="text-primary text-xl font-bold mb-1">{title}</h2>
+      <p className="text-primary/60 text-sm mb-1">{location}</p>
       <p className="text-secondary text-sm mb-1">{date}</p>
       <motion.div className="overflow-hidden">
         <motion.p
