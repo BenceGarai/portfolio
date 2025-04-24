@@ -6,7 +6,7 @@ interface SocialButtonProps {
   icon?: React.ReactNode;
 }
 
-export function SocialButton({ href, icon }: SocialButtonProps) {
+export function SocialButton({ href, icon, className }: SocialButtonProps) {
   return (
     <motion.a
       whileTap={{ scale: 0.95 }}

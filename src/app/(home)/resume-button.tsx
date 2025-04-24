@@ -16,7 +16,7 @@ export default function ResumeButton() {
         onClick={() => setIsOpen(true)}
         title="View Resume"
         aria-label="View resume"
-        className="cursor-pointer inline-flex justify-center items-center w-35 h-full bg-secondary border-2 rounded-2xl border-background font-semibold text-background tracking-widest">
+        className="cursor-pointer inline-flex justify-center items-center w-30 h-12 bg-secondary border-2 rounded-2xl border-background font-semibold text-background tracking-widest">
         Resume
       </motion.button>
       {/* Modal */}
