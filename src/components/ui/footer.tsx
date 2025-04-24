@@ -5,7 +5,7 @@ import { FaGithubAlt } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="flex items-center justify-around h-20 bg-foreground text-primary shadow-2xl shadow-gray-400">
+    <footer className="flex items-center justify-around h-20 bg-foreground text-primary shadow-2xl shadow-primary">
       <div className="grid gap-y-1">
         <p className="text-secondary font-medium">Get in touch</p>
         <a
